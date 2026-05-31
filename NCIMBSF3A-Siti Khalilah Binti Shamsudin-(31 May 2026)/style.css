@@ -1,0 +1,333 @@
+/* =============================================
+   Modern Portfolio CSS - Siti's Biography Website
+   Color Scheme: Navy Blue + Teal
+   ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER & NAVIGATION */
+header {
+    background-color: #0A2540;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00BFA5;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00BFA5;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 30vh;
+    min-height: 80px;
+    background: linear-gradient(rgba(10, 37, 64, 0.7), rgba(10, 37, 64, 0.7)), 
+                url('images/headerbackground.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00BFA5;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #008f7a;
+    transform: translateY(-3px);
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 60px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #0A2540;
+    font-size: 2.8rem;
+}
+
+h2 {
+    color: #0A2540;
+    margin: 2rem 0 1.5rem;
+    border-bottom: 3px solid #00BFA5;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+/* ABOUT PAGE LAYOUT */
+.about-grid {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    line-height: 1.8;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.details-list li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.education-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+/* TIMELINE for Experience */
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: -30px;
+    width: 4px;
+    background: #00BFA5;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.date {
+    width: 140px;
+    background: #0A2540;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.content {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* SKILLS */
+.skill-bar {
+    margin-bottom: 25px;
+}
+
+.skill-bar label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.bar {
+    height: 12px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00BFA5, #008f7a);
+    border-radius: 20px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #0A2540;
+    color: white;
+}
+
+/* CONTACT */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info, .contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00BFA5;
+    box-shadow: 0 0 0 3px rgba(0, 191, 165, 0.2);
+}
+
+button.btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0A2540;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .date {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hover Effects */
+.timeline-item:hover .content {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    transition: all 0.3s;
+}
